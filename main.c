@@ -1,5 +1,4 @@
 #include "gen_llist.h"
-#include "util.h"
 
 /* int datatype functions */
 
