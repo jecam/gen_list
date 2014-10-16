@@ -5,9 +5,6 @@
  *  from primitives to structs. See more details in the README.
  */
 
-#ifndef GEN_LLIST
-#define GEN_LLIST
-
 #include "gen_llist.h"
 
 #define HEAD (*list)
@@ -130,5 +127,3 @@ void ll_destroy(node** list) {
 }
 
 /* end of linked list definitions */
-
-#endif

@@ -1,5 +1,7 @@
 #include "util.h"
 
+#ifndef GEN_LLIST
+#define GEN_LLIST
 
 typedef struct llist_node node;
 
@@ -30,3 +32,5 @@ void ll_print(node** list, void(*print_fn)(void* data));
 void ll_destroy(node** head);
 /* generate a fresh new node wrapper for data and next pointer */
 node* gen_node(void* data);
+
+#endif
