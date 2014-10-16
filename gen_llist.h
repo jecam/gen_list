@@ -1,5 +1,5 @@
-#include <stdlib.h>
 #include "util.h"
+
 
 typedef struct llist_node node;
 
@@ -9,12 +9,15 @@ struct llist_node {
     node* next;
 };
 
-/* Supported operations: initialise list, add element, sorted add element, get element, delete element, count */
+/* Supported operations: initialise list, add element, sorted add element, 
+   get element, delete element, count, unload list 
+*/
 
 /* initialise the list head, returns pointer to a node */
 node** ll_init_list();
 /* add an element in sort order */
-bool ll_sorted_insert(node** head, void* data, bool(*cmp_data)(void* data_a, void* data_b));
+bool ll_sorted_insert(node** head, void* data, 
+                      bool(*cmp_data)(void* data_a, void* data_b));
 /* get an element by some sort of id */
 void* ll_retrieve(node** head, int id, int(*get_id)(void* data));
 /* delete an element */
