@@ -22,5 +22,5 @@ by Julian Camara 2014
     this would be called a constructor.
         
     Example implementation of these four types of function as relates to an int
-    list are provided, as well as a main method that demonstrates their usage and
-    usage of the list itself.
+    list are provided in main.c, as well as a main method that demonstrates their 
+    usage and usage of the list itself.
